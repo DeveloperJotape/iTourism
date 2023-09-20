@@ -13,9 +13,10 @@
 <link rel="stylesheet"
 	href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/style.css">
-<title>iTourismo - Entrar</title>
+<title>iTourism - Entrar</title>
 </head>
 <body>
+
 	<!-- HEADER -->
 	<header>
 		<!-- NAVBAR -->
@@ -131,9 +132,9 @@
 				</div>
 				<input type="text" class="input" name="login" id="name"
 					placeholder="Insira o nome de usuário" autofocus required>
-				<input type="password" class="input" name="password"
-					id="password" placeholder="Insira a senha" required> <input
-					type="submit" value="Entrar">
+				<input type="password" class="input" name="password" id="password"
+					placeholder="Insira a senha" required> <input type="submit"
+					value="Entrar">
 				<p>
 					Ainda não possui uma conta? <br> <a href="Cadastrar.jsp">Criar
 						conta</a>

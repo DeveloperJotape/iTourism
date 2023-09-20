@@ -17,23 +17,25 @@
 </head>
 <body>
 
-	<div class="container">
-		<%
-		String user_ = "admin";
-		String password_ = "123";
+	<section>
+		<div class="container text-center">
+			<%
+			String user_ = "admin";
+			String password_ = "123";
 
-		String user = request.getParameter("login");
-		String password = request.getParameter("password");
+			String user = request.getParameter("login");
+			String password = request.getParameter("password");
 
-		if (user.equals(user_) && password.equals(password_)) {
-			out.println("<h1 class='text-center'>Login realizado com sucesso!</h1>");
-			out.println("<p class='text-center'><a href='Entrar.jsp' class='btn-dark'>Voltar</a></p>");
-		} else {
-			out.println("<h1 class='text-center'>Dados incorretos!</h1>");
-			out.println("<p class='text-center'><a href='Entrar.jsp' class='btn-dark'>Voltar</a></p>");
-		}
-		%>
-	</div>
+			if (user.equals(user_) && password.equals(password_)) {
+				out.println("<h1>Login realizado com sucesso!</h1>");
+				out.println("<p><a href='Entrar.jsp' class='btn-dark'>Voltar</a></p>");
+			} else {
+				out.println("<h1>Dados incorretos!</h1>");
+				out.println("<p><a href='Entrar.jsp' class='btn-dark'>Voltar</a></p>");
+			}
+			%>
+		</div>
+	</section>
 
 </body>
 </html>

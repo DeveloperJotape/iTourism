@@ -13,7 +13,7 @@
 <link rel="stylesheet"
 	href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/style.css">
-<title>iTourismo - Cadastrar</title>
+<title>iTourism - Cadastrar</title>
 </head>
 <body>
 	<!-- HEADER -->

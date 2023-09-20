@@ -13,7 +13,7 @@
 <link rel="stylesheet"
 	href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/style.css">
-<title>iTourismo - Sobre</title>
+<title>iTourism - Sobre</title>
 </head>
 <body>
 

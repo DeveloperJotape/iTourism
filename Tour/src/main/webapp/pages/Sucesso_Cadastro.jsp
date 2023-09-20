@@ -13,7 +13,7 @@
 <link rel="stylesheet"
 	href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/style.css">
-<title>iTourismo - Sucesso</title>
+<title>iTourism - Sucesso</title>
 </head>
 <body>
 
@@ -38,8 +38,10 @@
 		<p>
 			Email:
 			<%=email%></p>
-			
-		<p><a class="btn-dark" href="Entrar.jsp">Voltar</a></p>
+
+		<p>
+			<a class="btn-dark" href="Entrar.jsp">Voltar</a>
+		</p>
 	</div>
 
 	<!-- FONTAWESOME -->

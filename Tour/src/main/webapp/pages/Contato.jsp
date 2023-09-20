@@ -13,7 +13,7 @@
 <link rel="stylesheet"
 	href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/style.css">
-<title>iTourismo - Contato</title>
+<title>iTourism - Contato</title>
 </head>
 <body>
 
@@ -126,24 +126,24 @@
 	<div class="container">
 		<section class="cadastro justify-content-center d-flex text-center">
 			<div class="form-cadastro">
-				<form action="Autenticar-Contato">
+				<form action="Autenticar-Contato.jsp">
 					<div class="text-center">
 						<h2 class="center-title">Entre em Contato</h2>
 					</div>
 					<div class="inputs">
 						<div class="row input">
 							<div class="col-sm">
-								<input type="text" class="nome" name="nome" id="nome"
+								<input type="text" class="nome" name="contato-nome" id="nome"
 									placeholder="Insira seu nome" required>
 							</div>
 							<div class="col-sm">
-								<input type="email" class="email" name="email" id="email"
+								<input type="email" class="email" name="contato-email" id="email"
 									placeholder="Insira seu email: exemplo@provedor.com" required>
 							</div>
 						</div>
 					</div>
 					<div class="inputs">
-						<textarea placeholder="Insira seu texto"></textarea>
+						<textarea name="contato-texto" placeholder="Insira seu texto"></textarea>
 					</div>
 					<input type="submit" value="Enviar" class="btn-dark btn-cadastro">
 				</form>
