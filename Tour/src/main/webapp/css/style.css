@@ -9,12 +9,24 @@ section {
 	margin-bottom: 2em;
 }
 
+.font {
+	color: #fff;
+}
+
+.font-1 {
+	color: #050505;
+}
+
 p {
     font-size: 18px;
 }
 
 a {
     font-size: 18px;
+}
+
+.link {
+	text-decoration: none;	
 }
 
 h2 {
@@ -140,6 +152,10 @@ h6 {
 	background: #fff;
 	border: 2px solid #050505;
 	color: #050505;
+}
+
+.bg-dark-1 {
+	background-color: #050505;	
 }
 
 /* NAVBAR */
@@ -391,15 +407,15 @@ h6 {
     font-size: 14px;
     margin-top: 15px;
     padding-top: 15px;
-    padding-bot: 15px;
+    padding-bottom: 15px;
 	resize: none;
 	width: 100%;
 }
 
 /* FOOTER */
-.footer {
-	padding: 45px;
-	background-color: #050505;
+footer a:hover {
+	color: #fff;	
+	text-decoration: underline;
 }
 
 /* MOBILE */
