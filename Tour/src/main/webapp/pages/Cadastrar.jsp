@@ -125,7 +125,7 @@
 	<div class="container">
 		<section class="cadastro justify-content-center d-flex text-center">
 			<div class="form-cadastro">
-				<form action="../Autentica_Cadastro" method="post">
+				<form action="../Autentica_Cadastro" method="post" action="<%= request.getContextPath() %>/ServletCadastroUsuario">
 					<div class="image-form">
 						<img src="../images/login.svg">
 					</div>
@@ -133,20 +133,20 @@
 						<div class="row input">
 							<div class="col-sm">
 								<input type="text" class="nome" name="nome" id="nome"
-									placeholder="Insira seu nome" required>
+									placeholder="Insira seu nome" required autocomplete="off">
 							</div>
 							<div class="col-sm">
 								<input type="text" class="sobrenome" name="sobrenome"
-									id="sobrenome" placeholder="Insira seu sobrenome" required>
+									id="sobrenome" placeholder="Insira seu sobrenome" required autocomplete="off">
 							</div>
 						</div>
 						<div class="input">
 							<input type="tel" class="telefone" name="telefone" id="telefone"
-								placeholder="Insira seu telefone: (xx) x xxxx-xxxx" required>
+								placeholder="Insira seu telefone: (xx) x xxxx-xxxx" required autocomplete="off">
 						</div>
 						<div class="input">
 							<input type="email" class="email" name="email" id="email"
-								placeholder="Insira seu email: exemplo@provedor.com" required>
+								placeholder="Insira seu email: exemplo@provedor.com" required autocomplete="off">
 						</div>
 						<div class="input">
 							<input type="password" class="senha" name="senha" id="senha"
