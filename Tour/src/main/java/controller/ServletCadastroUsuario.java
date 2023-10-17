@@ -31,11 +31,14 @@ public class ServletCadastroUsuario extends HttpServlet {
 		String senha = request.getParameter("senha");
 		
 		ModelCadastro modelCadastro = new ModelCadastro();
+		
 		modelCadastro.setNome(nome);
 		modelCadastro.setSobrenome(sobrenome);
 		modelCadastro.setTelefone(telefone);
 		modelCadastro.setEmail(email);
 		modelCadastro.setSenha(senha);
+		
+		response.sendRedirect("pages/Entrar.jsp");
 	}
 
 }
