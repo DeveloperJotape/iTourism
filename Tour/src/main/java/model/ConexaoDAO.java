@@ -3,7 +3,7 @@ package model;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class DAO {
+public class ConexaoDAO {
 
 	public Connection conexaoBD() throws ClassNotFoundException {
 		Connection con = null;

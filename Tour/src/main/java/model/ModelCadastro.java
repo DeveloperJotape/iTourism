@@ -6,7 +6,7 @@ public class ModelCadastro implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
-	private Long id;
+	private int id;
 	private String nome;
 	private String sobrenome;
 	private String telefone;
@@ -17,7 +17,7 @@ public class ModelCadastro implements Serializable{
 		
 	}
 		
-	public ModelCadastro(Long id, String nome, String sobrenome, String telefone, String email, String senha) {
+	public ModelCadastro(int id, String nome, String sobrenome, String telefone, String email, String senha) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -27,10 +27,10 @@ public class ModelCadastro implements Serializable{
 		this.senha = senha;
 	}
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getNome() {

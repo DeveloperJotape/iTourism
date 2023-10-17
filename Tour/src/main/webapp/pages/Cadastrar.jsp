@@ -125,7 +125,7 @@
 	<div class="container">
 		<section class="cadastro justify-content-center d-flex text-center">
 			<div class="form-cadastro">
-				<form action="../Autentica_Cadastro" method="post" action="<%= request.getContextPath() %>/ServletCadastroUsuario">
+				<form action="<%= request.getContextPath() %>/ServletCadastroUsuario" method="post">
 					<div class="image-form">
 						<img src="../images/login.svg">
 					</div>
