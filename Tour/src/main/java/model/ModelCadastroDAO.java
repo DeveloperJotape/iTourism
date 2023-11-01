@@ -9,9 +9,9 @@ public class ModelCadastroDAO {
 	Connection con;
 	PreparedStatement pstm;
 	
-	public void Cadastrar(ModelCadastro modelCadastro) throws ClassNotFoundException {
+	public void Cadastrar(ModelCadastro modelCadastro){
 		
-		String sql = "insert into cadastro (nome, sobrenome, telefone, email, senha) values (?, ?, ?, ?, ?)";
+		String sql = "INSERT INTO usuario (nome, sobrenome, telefone, email, senha) VALUES (?, ?, ?, ?, ?)";
 		con = new ConexaoDAO().conexaoBD();
 		
 		try {
@@ -27,7 +27,7 @@ public class ModelCadastroDAO {
 			pstm.close();
 			
 		} catch (SQLException e) {
-			
+			System.out.println(e);
 		}
 		
 	}

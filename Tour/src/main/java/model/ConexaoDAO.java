@@ -5,16 +5,21 @@ import java.sql.DriverManager;
 
 public class ConexaoDAO {
 
-	public Connection conexaoBD() throws ClassNotFoundException {
+	private static final String url = "jdbc:mysql://localhost:3306/itour";
+	private static final String user = "root";
+	private static final String password = "";
+	private static final String driver = "com.mysql.cj.jdbc.Driver";
+
+	public Connection conexaoBD(){
 		Connection con = null;
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			String url = "jdbc:mysql://localhost:3306/itourism?user=root&password=";
-			con = DriverManager.getConnection(url);
+			Class.forName(driver);
+			con = DriverManager.getConnection(url, user, password);
+			return con;
 		} catch (Exception e) {
-			
+			System.out.println(e);
+			return con;
 		}
-		return con;
 	}
-	
+
 }

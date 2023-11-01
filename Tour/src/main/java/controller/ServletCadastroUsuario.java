@@ -9,11 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import model.ModelCadastro;
+import model.ModelCadastroDAO;
 
 @WebServlet("/ServletCadastroUsuario")
 public class ServletCadastroUsuario extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	ModelCadastroDAO modelCadastroDAO = new ModelCadastroDAO();       
     public ServletCadastroUsuario() {
         super();
         
@@ -38,6 +39,7 @@ public class ServletCadastroUsuario extends HttpServlet {
 		modelCadastro.setEmail(email);
 		modelCadastro.setSenha(senha);
 		
+		modelCadastroDAO.Cadastrar(modelCadastro);
 		response.sendRedirect("pages/Entrar.jsp");
 	}
 
